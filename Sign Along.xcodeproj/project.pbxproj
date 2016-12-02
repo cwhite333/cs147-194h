@@ -7,23 +7,139 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D2F62191DE3127700418809 /* VideosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F62181DE3127700418809 /* VideosCollectionViewController.swift */; };
+		9D2F621B1DE316F200418809 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F621A1DE316F200418809 /* VideoCollectionViewCell.swift */; };
+		9D2F621D1DE31D7D00418809 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F621C1DE31D7D00418809 /* VideosViewController.swift */; };
+		9D2F62211DE31EBE00418809 /* VideoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F62201DE31EBE00418809 /* VideoItem.swift */; };
+		9D2F62251DE3CDA500418809 /* BackgroundVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D2F62241DE3CDA500418809 /* BackgroundVideo.mp4 */; };
+		9D2F62271DE3DF7300418809 /* city.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9D2F62261DE3DF7300418809 /* city.jpeg */; };
+		9D2F62291DE3DF7A00418809 /* sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D2F62281DE3DF7A00418809 /* sign.png */; };
+		9D2F622B1DE3DFCF00418809 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F622A1DE3DFCF00418809 /* LoginViewController.swift */; };
+		9D384BF11DEF027200E32A66 /* SecondSubmissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D384BF01DEF027200E32A66 /* SecondSubmissionTableViewCell.swift */; };
+		9D384BF31DEF02A100E32A66 /* ThirdSubmissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D384BF21DEF02A100E32A66 /* ThirdSubmissionTableViewCell.swift */; };
+		9D384BF51DEF082600E32A66 /* thumbs-up-256.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D384BF41DEF082600E32A66 /* thumbs-up-256.png */; };
+		9D7023F91DEEB06B00D06AB5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7023F81DEEB06B00D06AB5 /* AVFoundation.framework */; };
+		9D7023FB1DEEB07A00D06AB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7023FA1DEEB07A00D06AB5 /* UIKit.framework */; };
+		9D7023FD1DEEF29E00D06AB5 /* UserEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7023FC1DEEF29E00D06AB5 /* UserEventsTableViewController.swift */; };
+		9D7023FF1DEEF4DA00D06AB5 /* UserEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7023FE1DEEF4DA00D06AB5 /* UserEventTableViewCell.swift */; };
+		9D7024011DEEF79900D06AB5 /* UserContestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7024001DEEF79900D06AB5 /* UserContestTableViewController.swift */; };
+		9D7024051DEEFEB400D06AB5 /* SubmissionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7024041DEEFEB400D06AB5 /* SubmissionTableViewController.swift */; };
+		9D7024071DEF00F400D06AB5 /* FirstSubmissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7024061DEF00F400D06AB5 /* FirstSubmissionTableViewCell.swift */; };
+		9DC3ED051DDFD79D008A7895 /* ContestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC3ED041DDFD79D008A7895 /* ContestDetailViewController.swift */; };
+		9DC3ED071DDFE4B8008A7895 /* TracklistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC3ED061DDFE4B8008A7895 /* TracklistTableViewController.swift */; };
+		9DC3ED091DDFE661008A7895 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC3ED081DDFE661008A7895 /* TrackTableViewCell.swift */; };
+		9DC3ED0B1DDFEAD2008A7895 /* home-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DC3ED0A1DDFEAD2008A7895 /* home-7.png */; };
+		9DC3ED0D1DDFF865008A7895 /* circle-user-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DC3ED0C1DDFF865008A7895 /* circle-user-7.png */; };
+		9DC3ED121DE00C19008A7895 /* music-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DC3ED0E1DE00C19008A7895 /* music-7.png */; };
+		9DC3ED131DE00C19008A7895 /* video-camera-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DC3ED0F1DE00C19008A7895 /* video-camera-7.png */; };
+		9DC3ED141DE00C19008A7895 /* paper-plane-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DC3ED101DE00C19008A7895 /* paper-plane-7.png */; };
+		9DC3ED151DE00C19008A7895 /* origami-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DC3ED111DE00C19008A7895 /* origami-7.png */; };
+		9DC3ED171DE01228008A7895 /* concert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DC3ED161DE01228008A7895 /* concert.jpg */; };
+		9DC3ED191DE0127F008A7895 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC3ED181DE0127F008A7895 /* TrackViewController.swift */; };
 		9DE3064D1DDE7A60008280D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3064C1DDE7A60008280D5 /* AppDelegate.swift */; };
-		9DE3064F1DDE7A60008280D5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3064E1DDE7A60008280D5 /* FirstViewController.swift */; };
-		9DE306511DDE7A60008280D5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE306501DDE7A60008280D5 /* SecondViewController.swift */; };
 		9DE306541DDE7A60008280D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE306521DDE7A60008280D5 /* Main.storyboard */; };
 		9DE306561DDE7A60008280D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DE306551DDE7A60008280D5 /* Assets.xcassets */; };
 		9DE306591DDE7A60008280D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE306571DDE7A60008280D5 /* LaunchScreen.storyboard */; };
+		9DE306611DDE7B13008280D5 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE306601DDE7B13008280D5 /* EventsTableViewController.swift */; };
+		9DE3066B1DDE8583008280D5 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3066A1DDE8583008280D5 /* Event.swift */; };
+		9DE3066F1DDE8618008280D5 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3066E1DDE8618008280D5 /* EventTableViewCell.swift */; };
+		9DE306731DDE896B008280D5 /* photo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DE306701DDE896B008280D5 /* photo1.png */; };
+		9DE306741DDE896B008280D5 /* photo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DE306711DDE896B008280D5 /* photo2.png */; };
+		9DE306751DDE896B008280D5 /* photo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DE306721DDE896B008280D5 /* photo3.png */; };
+		9DF9FED01DF101430091CAC2 /* TrackContestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9FECF1DF101430091CAC2 /* TrackContestTableViewCell.swift */; };
+		9DF9FED21DF143250091CAC2 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9FED11DF143250091CAC2 /* Track.swift */; };
+		9DF9FED71DF14AFE0091CAC2 /* jeffery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9FED31DF14AFE0091CAC2 /* jeffery.jpg */; };
+		9DF9FED81DF14AFE0091CAC2 /* blurryface.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9FED41DF14AFE0091CAC2 /* blurryface.jpg */; };
+		9DF9FED91DF14AFE0091CAC2 /* starboy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9FED51DF14AFE0091CAC2 /* starboy.jpg */; };
+		9DF9FEDA1DF14AFE0091CAC2 /* coloringbook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9FED61DF14AFE0091CAC2 /* coloringbook.jpg */; };
+		9DF9FEDC1DF158010091CAC2 /* whatIMightDo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9FEDB1DF158010091CAC2 /* whatIMightDo.mp3 */; };
+		9DF9FEE21DF1607E0091CAC2 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9FEDF1DF1607E0091CAC2 /* play.png */; };
+		9DF9FEE41DF160850091CAC2 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9FEE31DF160850091CAC2 /* pause.png */; };
+		9DF9FEF01DF173180091CAC2 /* signalonglogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9FEEF1DF173180091CAC2 /* signalonglogo.png */; };
+		9DF9FEF21DF176FB0091CAC2 /* AllNight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9FEF11DF176FB0091CAC2 /* AllNight.mp3 */; };
+		9DFE636C1DEE50E900DA1139 /* youngthug2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFE636A1DEE50E900DA1139 /* youngthug2.jpg */; };
+		9DFE636D1DEE50E900DA1139 /* youngthug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFE636B1DEE50E900DA1139 /* youngthug.jpg */; };
+		9DFE63701DEE520000DA1139 /* chance2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFE636E1DEE520000DA1139 /* chance2.jpg */; };
+		9DFE63711DEE520000DA1139 /* chance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFE636F1DEE520000DA1139 /* chance.jpg */; };
+		9DFE63741DEE58CC00DA1139 /* weeknd2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFE63721DEE58CC00DA1139 /* weeknd2.jpg */; };
+		9DFE63751DEE58CC00DA1139 /* weeknd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFE63731DEE58CC00DA1139 /* weeknd.jpg */; };
+		9DFE63781DEE5A3200DA1139 /* pilots2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFE63761DEE5A3200DA1139 /* pilots2.jpg */; };
+		9DFE63791DEE5A3200DA1139 /* pilots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFE63771DEE5A3200DA1139 /* pilots.jpg */; };
+		9DFE637C1DEE5B3A00DA1139 /* pilots4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFE637A1DEE5B3A00DA1139 /* pilots4.jpg */; };
+		9DFE637D1DEE5B3A00DA1139 /* pilots3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFE637B1DEE5B3A00DA1139 /* pilots3.jpg */; };
+		9DFE637F1DEE60D000DA1139 /* FirstContestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE637E1DEE60D000DA1139 /* FirstContestTableViewCell.swift */; };
+		9DFE63811DEE637D00DA1139 /* SecondContestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE63801DEE637D00DA1139 /* SecondContestTableViewCell.swift */; };
+		9DFE63831DEE63B600DA1139 /* ThirdContestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE63821DEE63B600DA1139 /* ThirdContestTableViewCell.swift */; };
+		9DFE63851DEE647B00DA1139 /* ContestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE63841DEE647B00DA1139 /* ContestTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D2F62181DE3127700418809 /* VideosCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosCollectionViewController.swift; sourceTree = "<group>"; };
+		9D2F621A1DE316F200418809 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		9D2F621C1DE31D7D00418809 /* VideosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
+		9D2F62201DE31EBE00418809 /* VideoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoItem.swift; path = "Sign Along/VideoItem.swift"; sourceTree = "<group>"; };
+		9D2F62241DE3CDA500418809 /* BackgroundVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BackgroundVideo.mp4; sourceTree = "<group>"; };
+		9D2F62261DE3DF7300418809 /* city.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = city.jpeg; sourceTree = "<group>"; };
+		9D2F62281DE3DF7A00418809 /* sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign.png; sourceTree = "<group>"; };
+		9D2F622A1DE3DFCF00418809 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9D384BF01DEF027200E32A66 /* SecondSubmissionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSubmissionTableViewCell.swift; sourceTree = "<group>"; };
+		9D384BF21DEF02A100E32A66 /* ThirdSubmissionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdSubmissionTableViewCell.swift; sourceTree = "<group>"; };
+		9D384BF41DEF082600E32A66 /* thumbs-up-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbs-up-256.png"; sourceTree = "<group>"; };
+		9D7023F81DEEB06B00D06AB5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9D7023FA1DEEB07A00D06AB5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9D7023FC1DEEF29E00D06AB5 /* UserEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEventsTableViewController.swift; sourceTree = "<group>"; };
+		9D7023FE1DEEF4DA00D06AB5 /* UserEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEventTableViewCell.swift; sourceTree = "<group>"; };
+		9D7024001DEEF79900D06AB5 /* UserContestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserContestTableViewController.swift; sourceTree = "<group>"; };
+		9D7024041DEEFEB400D06AB5 /* SubmissionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmissionTableViewController.swift; sourceTree = "<group>"; };
+		9D7024061DEF00F400D06AB5 /* FirstSubmissionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstSubmissionTableViewCell.swift; path = "Sign Along/FirstSubmissionTableViewCell.swift"; sourceTree = "<group>"; };
+		9DC3ED041DDFD79D008A7895 /* ContestDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContestDetailViewController.swift; sourceTree = "<group>"; };
+		9DC3ED061DDFE4B8008A7895 /* TracklistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracklistTableViewController.swift; sourceTree = "<group>"; };
+		9DC3ED081DDFE661008A7895 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		9DC3ED0A1DDFEAD2008A7895 /* home-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-7.png"; sourceTree = "<group>"; };
+		9DC3ED0C1DDFF865008A7895 /* circle-user-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-user-7.png"; sourceTree = "<group>"; };
+		9DC3ED0E1DE00C19008A7895 /* music-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music-7.png"; sourceTree = "<group>"; };
+		9DC3ED0F1DE00C19008A7895 /* video-camera-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video-camera-7.png"; sourceTree = "<group>"; };
+		9DC3ED101DE00C19008A7895 /* paper-plane-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paper-plane-7.png"; sourceTree = "<group>"; };
+		9DC3ED111DE00C19008A7895 /* origami-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "origami-7.png"; sourceTree = "<group>"; };
+		9DC3ED161DE01228008A7895 /* concert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = concert.jpg; sourceTree = "<group>"; };
+		9DC3ED181DE0127F008A7895 /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
 		9DE306491DDE7A60008280D5 /* Sign Along.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sign Along.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE3064C1DDE7A60008280D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9DE3064E1DDE7A60008280D5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		9DE306501DDE7A60008280D5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9DE306531DDE7A60008280D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DE306551DDE7A60008280D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DE306581DDE7A60008280D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DE3065A1DDE7A60008280D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DE306601DDE7B13008280D5 /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		9DE3066A1DDE8583008280D5 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		9DE3066E1DDE8618008280D5 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		9DE306701DDE896B008280D5 /* photo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo1.png; sourceTree = "<group>"; };
+		9DE306711DDE896B008280D5 /* photo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo2.png; sourceTree = "<group>"; };
+		9DE306721DDE896B008280D5 /* photo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo3.png; sourceTree = "<group>"; };
+		9DF9FECF1DF101430091CAC2 /* TrackContestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackContestTableViewCell.swift; sourceTree = "<group>"; };
+		9DF9FED11DF143250091CAC2 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		9DF9FED31DF14AFE0091CAC2 /* jeffery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jeffery.jpg; sourceTree = "<group>"; };
+		9DF9FED41DF14AFE0091CAC2 /* blurryface.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blurryface.jpg; sourceTree = "<group>"; };
+		9DF9FED51DF14AFE0091CAC2 /* starboy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = starboy.jpg; sourceTree = "<group>"; };
+		9DF9FED61DF14AFE0091CAC2 /* coloringbook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coloringbook.jpg; sourceTree = "<group>"; };
+		9DF9FEDB1DF158010091CAC2 /* whatIMightDo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whatIMightDo.mp3; sourceTree = "<group>"; };
+		9DF9FEDF1DF1607E0091CAC2 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		9DF9FEE31DF160850091CAC2 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		9DF9FEEF1DF173180091CAC2 /* signalonglogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signalonglogo.png; sourceTree = "<group>"; };
+		9DF9FEF11DF176FB0091CAC2 /* AllNight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AllNight.mp3; sourceTree = "<group>"; };
+		9DFE636A1DEE50E900DA1139 /* youngthug2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = youngthug2.jpg; sourceTree = "<group>"; };
+		9DFE636B1DEE50E900DA1139 /* youngthug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = youngthug.jpg; sourceTree = "<group>"; };
+		9DFE636E1DEE520000DA1139 /* chance2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chance2.jpg; sourceTree = "<group>"; };
+		9DFE636F1DEE520000DA1139 /* chance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chance.jpg; sourceTree = "<group>"; };
+		9DFE63721DEE58CC00DA1139 /* weeknd2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = weeknd2.jpg; sourceTree = "<group>"; };
+		9DFE63731DEE58CC00DA1139 /* weeknd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = weeknd.jpg; sourceTree = "<group>"; };
+		9DFE63761DEE5A3200DA1139 /* pilots2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pilots2.jpg; sourceTree = "<group>"; };
+		9DFE63771DEE5A3200DA1139 /* pilots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pilots.jpg; sourceTree = "<group>"; };
+		9DFE637A1DEE5B3A00DA1139 /* pilots4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pilots4.jpg; sourceTree = "<group>"; };
+		9DFE637B1DEE5B3A00DA1139 /* pilots3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pilots3.jpg; sourceTree = "<group>"; };
+		9DFE637E1DEE60D000DA1139 /* FirstContestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstContestTableViewCell.swift; sourceTree = "<group>"; };
+		9DFE63801DEE637D00DA1139 /* SecondContestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondContestTableViewCell.swift; sourceTree = "<group>"; };
+		9DFE63821DEE63B600DA1139 /* ThirdContestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdContestTableViewCell.swift; sourceTree = "<group>"; };
+		9DFE63841DEE647B00DA1139 /* ContestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContestTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +147,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7023FB1DEEB07A00D06AB5 /* UIKit.framework in Frameworks */,
+				9D7023F91DEEB06B00D06AB5 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +158,10 @@
 		9DE306401DDE7A60008280D5 = {
 			isa = PBXGroup;
 			children = (
+				9D7024061DEF00F400D06AB5 /* FirstSubmissionTableViewCell.swift */,
+				9D7023FA1DEEB07A00D06AB5 /* UIKit.framework */,
+				9D7023F81DEEB06B00D06AB5 /* AVFoundation.framework */,
+				9D2F62201DE31EBE00418809 /* VideoItem.swift */,
 				9DE3064B1DDE7A60008280D5 /* Sign Along */,
 				9DE3064A1DDE7A60008280D5 /* Products */,
 			);
@@ -56,13 +178,67 @@
 		9DE3064B1DDE7A60008280D5 /* Sign Along */ = {
 			isa = PBXGroup;
 			children = (
+				9DF9FEF11DF176FB0091CAC2 /* AllNight.mp3 */,
+				9DF9FEEF1DF173180091CAC2 /* signalonglogo.png */,
+				9DF9FEE31DF160850091CAC2 /* pause.png */,
+				9DF9FEDF1DF1607E0091CAC2 /* play.png */,
+				9DF9FEDB1DF158010091CAC2 /* whatIMightDo.mp3 */,
+				9DF9FED31DF14AFE0091CAC2 /* jeffery.jpg */,
+				9DF9FED41DF14AFE0091CAC2 /* blurryface.jpg */,
+				9DF9FED51DF14AFE0091CAC2 /* starboy.jpg */,
+				9DF9FED61DF14AFE0091CAC2 /* coloringbook.jpg */,
+				9D384BF41DEF082600E32A66 /* thumbs-up-256.png */,
+				9DFE637A1DEE5B3A00DA1139 /* pilots4.jpg */,
+				9DFE637B1DEE5B3A00DA1139 /* pilots3.jpg */,
+				9DFE63761DEE5A3200DA1139 /* pilots2.jpg */,
+				9DFE63771DEE5A3200DA1139 /* pilots.jpg */,
+				9DFE63721DEE58CC00DA1139 /* weeknd2.jpg */,
+				9DFE63731DEE58CC00DA1139 /* weeknd.jpg */,
+				9DFE636E1DEE520000DA1139 /* chance2.jpg */,
+				9DFE636F1DEE520000DA1139 /* chance.jpg */,
+				9DFE636A1DEE50E900DA1139 /* youngthug2.jpg */,
+				9DFE636B1DEE50E900DA1139 /* youngthug.jpg */,
+				9D2F62281DE3DF7A00418809 /* sign.png */,
+				9D2F62261DE3DF7300418809 /* city.jpeg */,
+				9D2F62241DE3CDA500418809 /* BackgroundVideo.mp4 */,
+				9DC3ED161DE01228008A7895 /* concert.jpg */,
+				9DC3ED0E1DE00C19008A7895 /* music-7.png */,
+				9DC3ED0F1DE00C19008A7895 /* video-camera-7.png */,
+				9DC3ED101DE00C19008A7895 /* paper-plane-7.png */,
+				9DC3ED111DE00C19008A7895 /* origami-7.png */,
+				9DC3ED0C1DDFF865008A7895 /* circle-user-7.png */,
+				9DC3ED0A1DDFEAD2008A7895 /* home-7.png */,
+				9DE306701DDE896B008280D5 /* photo1.png */,
+				9DE306711DDE896B008280D5 /* photo2.png */,
+				9DE306721DDE896B008280D5 /* photo3.png */,
+				9DE3066E1DDE8618008280D5 /* EventTableViewCell.swift */,
 				9DE3064C1DDE7A60008280D5 /* AppDelegate.swift */,
-				9DE3064E1DDE7A60008280D5 /* FirstViewController.swift */,
-				9DE306501DDE7A60008280D5 /* SecondViewController.swift */,
 				9DE306521DDE7A60008280D5 /* Main.storyboard */,
+				9DF9FECF1DF101430091CAC2 /* TrackContestTableViewCell.swift */,
+				9D384BF21DEF02A100E32A66 /* ThirdSubmissionTableViewCell.swift */,
+				9D7024041DEEFEB400D06AB5 /* SubmissionTableViewController.swift */,
+				9D384BF01DEF027200E32A66 /* SecondSubmissionTableViewCell.swift */,
+				9D7024001DEEF79900D06AB5 /* UserContestTableViewController.swift */,
+				9D7023FC1DEEF29E00D06AB5 /* UserEventsTableViewController.swift */,
+				9DFE63821DEE63B600DA1139 /* ThirdContestTableViewCell.swift */,
+				9DFE63801DEE637D00DA1139 /* SecondContestTableViewCell.swift */,
+				9DFE637E1DEE60D000DA1139 /* FirstContestTableViewCell.swift */,
+				9D2F621C1DE31D7D00418809 /* VideosViewController.swift */,
+				9D2F621A1DE316F200418809 /* VideoCollectionViewCell.swift */,
+				9D2F62181DE3127700418809 /* VideosCollectionViewController.swift */,
+				9DC3ED041DDFD79D008A7895 /* ContestDetailViewController.swift */,
+				9DFE63841DEE647B00DA1139 /* ContestTableViewController.swift */,
+				9DC3ED061DDFE4B8008A7895 /* TracklistTableViewController.swift */,
+				9DC3ED081DDFE661008A7895 /* TrackTableViewCell.swift */,
+				9DE306601DDE7B13008280D5 /* EventsTableViewController.swift */,
 				9DE306551DDE7A60008280D5 /* Assets.xcassets */,
 				9DE306571DDE7A60008280D5 /* LaunchScreen.storyboard */,
 				9DE3065A1DDE7A60008280D5 /* Info.plist */,
+				9DE3066A1DDE8583008280D5 /* Event.swift */,
+				9DF9FED11DF143250091CAC2 /* Track.swift */,
+				9DC3ED181DE0127F008A7895 /* TrackViewController.swift */,
+				9D7023FE1DEEF4DA00D06AB5 /* UserEventTableViewCell.swift */,
+				9D2F622A1DE3DFCF00418809 /* LoginViewController.swift */,
 			);
 			path = "Sign Along";
 			sourceTree = "<group>";
@@ -126,8 +302,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DFE636D1DEE50E900DA1139 /* youngthug.jpg in Resources */,
+				9DFE63781DEE5A3200DA1139 /* pilots2.jpg in Resources */,
+				9DE306741DDE896B008280D5 /* photo2.png in Resources */,
+				9DE306731DDE896B008280D5 /* photo1.png in Resources */,
+				9D384BF51DEF082600E32A66 /* thumbs-up-256.png in Resources */,
 				9DE306591DDE7A60008280D5 /* LaunchScreen.storyboard in Resources */,
+				9D2F62251DE3CDA500418809 /* BackgroundVideo.mp4 in Resources */,
+				9DC3ED0B1DDFEAD2008A7895 /* home-7.png in Resources */,
+				9DFE63741DEE58CC00DA1139 /* weeknd2.jpg in Resources */,
+				9DF9FED71DF14AFE0091CAC2 /* jeffery.jpg in Resources */,
 				9DE306561DDE7A60008280D5 /* Assets.xcassets in Resources */,
+				9DFE637C1DEE5B3A00DA1139 /* pilots4.jpg in Resources */,
+				9DC3ED171DE01228008A7895 /* concert.jpg in Resources */,
+				9DC3ED121DE00C19008A7895 /* music-7.png in Resources */,
+				9DF9FEE41DF160850091CAC2 /* pause.png in Resources */,
+				9DC3ED141DE00C19008A7895 /* paper-plane-7.png in Resources */,
+				9DF9FEDA1DF14AFE0091CAC2 /* coloringbook.jpg in Resources */,
+				9DFE63791DEE5A3200DA1139 /* pilots.jpg in Resources */,
+				9DFE637D1DEE5B3A00DA1139 /* pilots3.jpg in Resources */,
+				9DFE63701DEE520000DA1139 /* chance2.jpg in Resources */,
+				9DFE636C1DEE50E900DA1139 /* youngthug2.jpg in Resources */,
+				9DFE63751DEE58CC00DA1139 /* weeknd.jpg in Resources */,
+				9DF9FEF01DF173180091CAC2 /* signalonglogo.png in Resources */,
+				9DF9FEE21DF1607E0091CAC2 /* play.png in Resources */,
+				9D2F62271DE3DF7300418809 /* city.jpeg in Resources */,
+				9DE306751DDE896B008280D5 /* photo3.png in Resources */,
+				9DF9FEDC1DF158010091CAC2 /* whatIMightDo.mp3 in Resources */,
+				9DC3ED151DE00C19008A7895 /* origami-7.png in Resources */,
+				9DFE63711DEE520000DA1139 /* chance.jpg in Resources */,
+				9D2F62291DE3DF7A00418809 /* sign.png in Resources */,
+				9DF9FED81DF14AFE0091CAC2 /* blurryface.jpg in Resources */,
+				9DF9FED91DF14AFE0091CAC2 /* starboy.jpg in Resources */,
+				9DC3ED0D1DDFF865008A7895 /* circle-user-7.png in Resources */,
+				9DF9FEF21DF176FB0091CAC2 /* AllNight.mp3 in Resources */,
+				9DC3ED131DE00C19008A7895 /* video-camera-7.png in Resources */,
 				9DE306541DDE7A60008280D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,9 +348,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DE306511DDE7A60008280D5 /* SecondViewController.swift in Sources */,
+				9DE3066F1DDE8618008280D5 /* EventTableViewCell.swift in Sources */,
+				9DC3ED071DDFE4B8008A7895 /* TracklistTableViewController.swift in Sources */,
+				9DFE63851DEE647B00DA1139 /* ContestTableViewController.swift in Sources */,
+				9D7023FF1DEEF4DA00D06AB5 /* UserEventTableViewCell.swift in Sources */,
+				9DC3ED051DDFD79D008A7895 /* ContestDetailViewController.swift in Sources */,
+				9DFE63811DEE637D00DA1139 /* SecondContestTableViewCell.swift in Sources */,
+				9DC3ED191DE0127F008A7895 /* TrackViewController.swift in Sources */,
+				9DC3ED091DDFE661008A7895 /* TrackTableViewCell.swift in Sources */,
+				9D2F621B1DE316F200418809 /* VideoCollectionViewCell.swift in Sources */,
 				9DE3064D1DDE7A60008280D5 /* AppDelegate.swift in Sources */,
-				9DE3064F1DDE7A60008280D5 /* FirstViewController.swift in Sources */,
+				9DFE637F1DEE60D000DA1139 /* FirstContestTableViewCell.swift in Sources */,
+				9D7024071DEF00F400D06AB5 /* FirstSubmissionTableViewCell.swift in Sources */,
+				9D2F62211DE31EBE00418809 /* VideoItem.swift in Sources */,
+				9D384BF31DEF02A100E32A66 /* ThirdSubmissionTableViewCell.swift in Sources */,
+				9D2F621D1DE31D7D00418809 /* VideosViewController.swift in Sources */,
+				9DF9FED01DF101430091CAC2 /* TrackContestTableViewCell.swift in Sources */,
+				9DFE63831DEE63B600DA1139 /* ThirdContestTableViewCell.swift in Sources */,
+				9D7024011DEEF79900D06AB5 /* UserContestTableViewController.swift in Sources */,
+				9D384BF11DEF027200E32A66 /* SecondSubmissionTableViewCell.swift in Sources */,
+				9DE306611DDE7B13008280D5 /* EventsTableViewController.swift in Sources */,
+				9D7023FD1DEEF29E00D06AB5 /* UserEventsTableViewController.swift in Sources */,
+				9D2F622B1DE3DFCF00418809 /* LoginViewController.swift in Sources */,
+				9DE3066B1DDE8583008280D5 /* Event.swift in Sources */,
+				9DF9FED21DF143250091CAC2 /* Track.swift in Sources */,
+				9D2F62191DE3127700418809 /* VideosCollectionViewController.swift in Sources */,
+				9D7024051DEEFEB400D06AB5 /* SubmissionTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,10 +486,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sign Along/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs147.mxiao26.Sign-Along";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -265,10 +501,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sign Along/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs147.mxiao26.Sign-Along";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -291,6 +531,7 @@
 				9DE3065F1DDE7A60008280D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

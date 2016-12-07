@@ -5,11 +5,12 @@
 //  Created by Minna Xiao on 11/21/16.
 //  Copyright © 2016 Stanford. All rights reserved.
 //
-
+/*
 import UIKit
 
 class VideosViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     var event: Event?
@@ -21,6 +22,7 @@ class VideosViewController: UIViewController, UICollectionViewDataSource, UIColl
         initVideoItems()
         collectionView.reloadData()
     }
+    
     
     func initVideoItems() {
         videos += [VideoItem(imageName: "photo1.png", creator: "John Doe", track: "Rap God", votes: 100, profPic: "chance2.jpg"),
@@ -39,26 +41,29 @@ class VideosViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("VideoCollectionViewCell", forIndexPath: indexPath) as! VideoCollectionViewCell
+        //let cell = collectionView.dequeueReusableCellWithReuseIdentifier("VideoCollectionViewCell", forIndexPath: indexPath) as! VideoCollectionViewCell
         
-        let vid = videos[indexPath.row]
-        cell.thumbnailImageView.image = UIImage(named: vid.thumbnailImage)
+        //let vid = videos[indexPath.row]
+        //cell.thumbnailImageView.image = UIImage(named: vid.thumbnailImage)
         
-        //cell.setVideoItem(vid)
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ThumbnailCell", forIndexPath: indexPath) as! ThumbnailCollectionViewCell
+        cell.video = videos[indexPath.row]
+        
+
         return cell
     }
     
     
     
-    /*
+    
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         
-        let commentView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "GalleryItemCommentView", forIndexPath: indexPath) as! GalleryItemCommentView
+        let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "ProfileHeader", forIndexPath: indexPath)
         
-        commentView.commentLabel.text = "Supplementary view of kind \(kind)"
+        //commentView.commentLabel.text = "Supplementary view of kind \(kind)"
         
-        return commentView
-    }*/
+        return headerView
+    }
     
     // MARK: UICollectionViewDelegate
     
@@ -84,7 +89,7 @@ class VideosViewController: UIViewController, UICollectionViewDataSource, UIColl
         return UIEdgeInsetsMake(0, leftRightInset, 0, leftRightInset)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    /*override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let destinationvc: UIViewController? = segue.destinationViewController
         if let identifier = segue.identifier {
             
@@ -99,6 +104,7 @@ class VideosViewController: UIViewController, UICollectionViewDataSource, UIColl
             }
         
         }
-    }
+    }*/
   
 }
+ */

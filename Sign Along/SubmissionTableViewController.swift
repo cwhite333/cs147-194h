@@ -97,20 +97,6 @@ class SubmissionTableViewController: UITableViewController {
     func playerItemDidReachEnd() {
         player!.seekToTime(kCMTimeZero)
     }
-    
-    // MARK: Navigation
-    
-    /*
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let destinationvc: UIViewController? = segue.destinationViewController
-        if let identifier = segue.identifier {
-            if identifier == "Show Tracklist" {
-                if let tracklistvc = destinationvc as? TracklistTableViewController {
-                    tracklistvc.event = event!
-                }
-            }
-        }
-    }*/
+
 
 }

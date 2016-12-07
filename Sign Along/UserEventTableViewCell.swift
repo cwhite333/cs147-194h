@@ -12,13 +12,18 @@ class UserEventTableViewCell: UITableViewCell {
     
     // MARK: Properties
     
-    @IBOutlet weak var concertImage: UIImageView!
+
+    @IBOutlet weak var photoImageView: UIImageView!
     
-    @IBOutlet weak var artistLabel: UILabel!
+    @IBOutlet weak var eventName: UILabel!
     
-    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var eventLocation: UILabel!
     
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var eventDate: UILabel!
+
+    @IBOutlet weak var daysLeftLabel: UILabel!
+    
+    @IBOutlet weak var daysLeftView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

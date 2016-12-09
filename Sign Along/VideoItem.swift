@@ -15,13 +15,15 @@ class VideoItem {
     var track: String
     var voteCount: Int
     var creatorProfPic: String //profile pic of interpretor
+    var videoName: String
     
-    init(imageName: String, creator: String, track: String, votes: Int, profPic: String) {
+    init(imageName: String, creator: String, track: String, votes: Int, profPic: String, videoName: String) {
         thumbnailImage = imageName
         creatorName = creator
         self.track = track
         voteCount = votes
         creatorProfPic = profPic
+        self.videoName = videoName
     }
     
     //increment vote by one

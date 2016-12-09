@@ -12,6 +12,8 @@ class MessagesListTableViewController: UITableViewController {
     
     
     var messagers = [String]()
+    var firstNames = [String]()
+    var pictures = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +24,9 @@ class MessagesListTableViewController: UITableViewController {
     }
     
     func loadSampleMessages() {
-        messagers = ["Bob", "Joe", "Alice"]
+        messagers = ["Miranda Lee", "Wesley James", "David Johnson"]
+        firstNames = ["Miranda", "Wesley", "David"]
+        pictures = ["stock1.jpg", "team02.jpg", "team04.jpg"]
     }
     
     // MARK: - Table view data source
@@ -46,7 +50,7 @@ class MessagesListTableViewController: UITableViewController {
         cell.friendImage.layer.borderColor = UIColor.whiteColor().CGColor
         cell.friendImage.layer.cornerRadius = cell.friendImage.frame.size.width/2
         cell.friendImage.clipsToBounds = true
-        cell.friendImage.image = UIImage(named: "chance2.jpg")
+        cell.friendImage.image = UIImage(named: pictures[indexPath.row])
         
         return cell
     }
@@ -66,7 +70,8 @@ class MessagesListTableViewController: UITableViewController {
                     let chatIndex = tableView.indexPathForSelectedRow?.row
                     //detailvc.senderDisplayName = messagers[chatIndex!]
                     //detailvc.senderId = "abc"
-                    detailvc.friend = messagers[chatIndex!]
+                    detailvc.friend = firstNames[chatIndex!]
+                    detailvc.displayList = false
                     
                 }
             }

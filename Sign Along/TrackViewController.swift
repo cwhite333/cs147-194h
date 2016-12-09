@@ -6,6 +6,7 @@
 //  Copyright © 2016 Stanford. All rights reserved.
 //
 
+
 import UIKit
 import MobileCoreServices
 import AssetsLibrary
@@ -18,6 +19,8 @@ class TrackViewController: UIViewController, UIImagePickerControllerDelegate, UI
     var event: Event?
     var track: Track?
     let controller = UIImagePickerController()
+    
+    var trackFileName: String?
     
     var isRecording = false //to differentiate between a recorded video and video from library
     
@@ -38,7 +41,7 @@ class TrackViewController: UIViewController, UIImagePickerControllerDelegate, UI
     @IBOutlet weak var artistName: UILabel!
     
     
-    @IBOutlet weak var recordButton: UIButton!
+    //@IBOutlet weak var recordButton: UIButton!
     
     @IBOutlet weak var uploadButton: UIButton!
     
@@ -50,14 +53,23 @@ class TrackViewController: UIViewController, UIImagePickerControllerDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /*
         recordButton.layer.cornerRadius = 5
         recordButton.layer.borderColor = UIColor.whiteColor().CGColor
+        */
+        
         uploadButton.layer.cornerRadius = 5
         uploadButton.layer.borderColor = UIColor.whiteColor().CGColor
         
         displaySetUp()
         
         audioSetUp()
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.title = ""
         
     }
     
@@ -176,7 +188,7 @@ class TrackViewController: UIViewController, UIImagePickerControllerDelegate, UI
     
     // Set up the audio player to play track
     private func audioSetUp() {
-        let audioFilePath = NSBundle.mainBundle().pathForResource("AllNight", ofType: "mp3")
+        let audioFilePath = NSBundle.mainBundle().pathForResource(trackFileName!, ofType: "mp3")
         if audioFilePath != nil {
             let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
             
@@ -207,7 +219,7 @@ class TrackViewController: UIViewController, UIImagePickerControllerDelegate, UI
     /* Video Related Code */
     
     
-    @IBAction func recordVideo(sender: AnyObject) {
+   /* @IBAction func recordVideo(sender: AnyObject) {
         if (UIImagePickerController.isSourceTypeAvailable(.Camera)) {
             if (UIImagePickerController.availableCaptureModesForCameraDevice(.Rear) != nil) {
                 controller.sourceType = .Camera
@@ -226,7 +238,7 @@ class TrackViewController: UIViewController, UIImagePickerControllerDelegate, UI
             showAlert("No Camera", message: "Application cannot access camera")
         }
 
-    }
+    }*/
     
     
     func showAlert(title: String, message: String) {
@@ -303,7 +315,6 @@ class TrackViewController: UIViewController, UIImagePickerControllerDelegate, UI
         
         
     }
-    
     
 
 }

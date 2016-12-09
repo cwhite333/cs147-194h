@@ -12,8 +12,6 @@ class AnnotatedPhotoCell: UICollectionViewCell {
   
     @IBOutlet weak var imageView: UIImageView!
 
-    @IBOutlet weak var captionLabel: UILabel!
-  //@IBOutlet private weak var imageViewHeightLayoutConstraint: NSLayoutConstraint!
 
     @IBOutlet weak var commentLabel: UILabel!
   
@@ -21,7 +19,6 @@ class AnnotatedPhotoCell: UICollectionViewCell {
     didSet {
       if let video = video {
         imageView.image = UIImage(named: video.thumbnailImage)
-        captionLabel.text = video.creatorName
         commentLabel.text = video.track
         
         

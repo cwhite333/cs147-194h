@@ -18,9 +18,9 @@ import UIKit
 
 class UserMessagesListTableViewController: UITableViewController {
     
-    @IBOutlet weak var friendName: UILabel!
     
     var messagers = [String]()
+    var profilePics = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,8 @@ class UserMessagesListTableViewController: UITableViewController {
     }
     
     func loadSampleMessages() {
-        messagers = ["Bob", "Joe", "Alice"]
+        messagers = ["Amber Gallego", "Libbey Ketterer", "Anissa"]
+        profilePics = ["amber.jpg", "libbey.jpg", "anissa.png"]
     }
     
     // MARK: - Table view data source
@@ -55,7 +56,7 @@ class UserMessagesListTableViewController: UITableViewController {
         cell.friendImage.layer.borderColor = UIColor.whiteColor().CGColor
         cell.friendImage.layer.cornerRadius = cell.friendImage.frame.size.width/2
         cell.friendImage.clipsToBounds = true
-        cell.friendImage.image = UIImage(named: "chance2.jpg")
+        cell.friendImage.image = UIImage(named: profilePics[indexPath.row])
         
         return cell
     }
@@ -73,9 +74,9 @@ class UserMessagesListTableViewController: UITableViewController {
             if identifier == "Show Chat" {
                 if let detailvc = destinationvc as? ChatViewController {
                     let chatIndex = tableView.indexPathForSelectedRow?.row
-                    //detailvc.senderDisplayName = messagers[chatIndex!]
-                    //detailvc.senderId = "abc"
                     detailvc.friend = messagers[chatIndex!]
+                    detailvc.inUser = true
+                    detailvc.displayList = true
                     
                 }
             }

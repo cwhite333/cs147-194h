@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import AVKit
 
 class PhotoStreamViewController: UICollectionViewController {
   
@@ -34,9 +35,9 @@ class PhotoStreamViewController: UICollectionViewController {
     }
     
     func initVideoItems() {
-        videos += [VideoItem(imageName: "pilots4.jpg", creator: "John Doe", track: "Rap God", votes: 100, profPic: "chance2.jpg"),
-                   VideoItem(imageName: "pilots3.jpg", creator: "Jane Smith", track: "All Night", votes: 100, profPic: "chance2.jpg"),
-                   VideoItem(imageName: "pilots.jpg", creator: "Fred Wilson", track: "Juke Jame", votes: 100, profPic: "chance2.jpg")]
+        videos += [VideoItem(imageName: "RapGod_Thumbnail.png", creator: "Amber Gallego", track: "Rap God", votes: 100, profPic: "amber2.png", videoName: "RapGod_Amber"),
+                   VideoItem(imageName: "Anaconda_Thumbnail.png", creator: "Amber Gallego", track: "Anaconda", votes: 100, profPic: "amber2.png", videoName: "Anaconda_Amber"),
+                   VideoItem(imageName: "StressedOut_thumbnail", creator: "Amber Gallego", track: "Stressed Out", votes: 100, profPic: "amber2.png", videoName: "StressedOut_Amber"), VideoItem(imageName: "MarryMe_amber_thumbnail.png", creator: "Amber Gallego", track: "Marry Me", votes: 100, profPic: "amber2.png", videoName: "MarryMe_amber")]
     }
   
 }
@@ -58,6 +59,24 @@ extension PhotoStreamViewController {
     return cell
   }
     
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let vidName = videos[indexPath.item].videoName
+        playVideo(vidName)
+        
+        
+    }
+    
+    private func playVideo(name: String) {
+        let path = NSBundle.mainBundle().pathForResource(name, ofType: "mp4")
+        let player = AVPlayer(URL: NSURL(fileURLWithPath: path!))
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        presentViewController(playerController, animated: true, completion: { () -> Void in
+            player.play()
+        })
+        
+    }
+    
    /* func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         let picDimension = self.view.frame.size.width / 3.0
         return CGSizeMake(picDimension, picDimension - 10.0)
@@ -73,12 +92,12 @@ extension PhotoStreamViewController {
     switch kind {
     case UICollectionElementKindSectionHeader:
       let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "ProfileHeader", forIndexPath: indexPath) as! InterpreterProfileHeaderView
-      headerView.imageView.image = UIImage(named: "chance2.jpg")
+      headerView.imageView.image = UIImage(named: "amber2.png")
       headerView.imageView.layer.masksToBounds = false
       headerView.imageView.layer.borderColor = UIColor.whiteColor().CGColor
       headerView.imageView.layer.cornerRadius = headerView.imageView.frame.size.width/2
       headerView.imageView.clipsToBounds = true
-      headerView.nameLabel.text = "Young Thug"
+      headerView.nameLabel.text = "Amber Galloway Gallego"
       return headerView
       
     default:

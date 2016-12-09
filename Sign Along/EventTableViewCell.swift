@@ -21,6 +21,9 @@ class EventTableViewCell: UITableViewCell {
     
     @IBOutlet weak var daysLeftView: UIView!
     
+    @IBOutlet weak var daysLeftLabel: UILabel!
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

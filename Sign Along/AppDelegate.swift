@@ -16,6 +16,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        // Override point for customization after application launch.
+        // Sets background to a blank/empty image
+        //UINavigationBar.appearance().setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        // Sets shadow (line below the bar) to a blank image
+        //UINavigationBar.appearance().shadowImage = UIImage()
+        // Sets the translucent background color
+        //UINavigationBar.appearance().backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
+        // Set translucent. (Default value is already true, so this can be removed if desired.)
+        
+        
+        let customColor = UIColor(red: 81, green: 189, blue: 187)
+        UINavigationBar.appearance().barTintColor = customColor
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        //UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
+        
+        UINavigationBar.appearance().titleTextAttributes =
+            ([NSFontAttributeName: UIFont(name: "Chalkduster", size: 22)!,
+                NSForegroundColorAttributeName: UIColor.whiteColor()])
+        
+        UITabBar.appearance().tintColor = customColor
+        UITabBar.appearance().barTintColor = UIColor.darkGrayColor()
+        
+        //didot
+        
+        
+        
         return true
     }
 
@@ -42,5 +71,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension UIColor {
+    convenience init(red: Int, green: Int, blue: Int) {
+        let newRed = CGFloat(red)/255
+        let newGreen = CGFloat(green)/255
+        let newBlue = CGFloat(blue)/255
+        
+        self.init(red: newRed, green: newGreen, blue: newBlue, alpha: 1.0)
+    }
 }
 

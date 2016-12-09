@@ -15,6 +15,9 @@ class ChatViewController: JSQMessagesViewController {
     var messages = [JSQMessage]()
     var friend = String()
     
+    var inUser = false
+    var displayList = false
+    
     //lazy var outgoingBubbleImageView: JSQMessagesBubbleImage = self.setupOutgoingBubble()
     //lazy var incomingBubbleImageView: JSQMessagesBubbleImage = self.setupIncomingBubble()
     
@@ -29,7 +32,15 @@ class ChatViewController: JSQMessagesViewController {
         self.collectionView.backgroundColor = UIColor.blackColor()
         self.tabBarController?.tabBar.hidden = true
         self.setup()
-        self.addMessages()
+        
+        if inUser == false {
+            self.addMessagesInterpreterView()
+        } else {
+            if displayList {
+                self.addMessagesUserView()
+            }
+        }
+        
         
         self.collectionView?.reloadData()
         
@@ -39,7 +50,7 @@ class ChatViewController: JSQMessagesViewController {
         self.tabBarController?.tabBar.hidden = false
     }
     
-    func addMessages() {
+    func addMessagesInterpreterView() {
         
         addMessage(withId: "foo", name: friend, text: "Hi! I really love your videos!")
         //messages from local sender
@@ -47,6 +58,17 @@ class ChatViewController: JSQMessagesViewController {
         
         addMessage(withId: self.senderId, name: self.senderDisplayName, text: "You should check it out.")
         finishReceivingMessage()
+    }
+    
+    func addMessagesUserView() {
+        
+        //messages from local sender
+        addMessage(withId: self.senderId, name: self.senderDisplayName, text: "Hi! I'm a huge fan of yours!")
+        
+        
+        addMessage(withId: "foo", name: friend, text: "Thanks for your support!")
+        finishReceivingMessage()
+
     }
     
     override func viewDidAppear(animated: Bool) {

@@ -7,5 +7,6 @@ target 'Sign Along' do
 
   # Pods for Sign Along
   pod 'JSQMessagesViewController'
+  pod 'Koloda'
 
 end

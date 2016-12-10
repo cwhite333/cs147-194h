@@ -69,7 +69,8 @@ class TrackViewController: UIViewController, UIImagePickerControllerDelegate, UI
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = ""
+        self.navigationItem.title = "Submit"
+        
         
     }
     

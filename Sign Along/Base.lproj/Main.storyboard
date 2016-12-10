@@ -265,7 +265,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.67450980392156867" green="0.58823529411764708" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.50980392156862742" green="0.44705882352941173" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TrackContestCell" rowHeight="50" id="CQr-dl-u0n" customClass="TrackContestTableViewCell" customModule="Sign_Along" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="547" width="414" height="50"/>
@@ -294,7 +294,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.67450980392156867" green="0.58823529411764708" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.50980392156862742" green="0.44705882352941173" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <outlet property="albumLabel" destination="R3i-Si-z1q" id="kpo-YD-FQ8"/>
@@ -573,7 +573,7 @@
                                                 <constraint firstAttribute="height" constant="95" id="u2N-sx-xIL"/>
                                             </constraints>
                                         </imageView>
-                                        <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9Q-dP-1jc">
+                                        <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9Q-dP-1jc">
                                             <rect key="frame" x="4" y="110" width="156" height="21"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhr-Kj-K3G">
@@ -582,11 +582,11 @@
                                                         <constraint firstAttribute="height" constant="21" id="bsX-nU-C2f"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" red="0.31764705882352939" green="0.74117647058823533" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="Vhr-Kj-K3G" secondAttribute="trailing" constant="8" id="0zk-pS-jwY"/>
                                                 <constraint firstAttribute="bottom" secondItem="Vhr-Kj-K3G" secondAttribute="bottom" id="jhY-fk-IgS"/>
@@ -818,7 +818,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="city.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="hsh-iM-dde">
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chance.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hsh-iM-dde">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDW-M1-gZw">
@@ -1488,10 +1488,11 @@
                                             <rect key="frame" x="4" y="110" width="156" height="21"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekx-NJ-6Qr">
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekx-NJ-6Qr">
                                             <rect key="frame" x="4" y="110" width="156" height="21"/>
+                                            <color key="backgroundColor" red="0.31764705882352939" green="0.74117647058823533" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="play2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ds1-Ht-yw4">
@@ -1649,9 +1650,9 @@
         <image name="Menu-30.png" width="30" height="30"/>
         <image name="amber.jpg" width="4477" height="3027"/>
         <image name="amber2.png" width="808" height="693"/>
+        <image name="chance.jpg" width="1500" height="844"/>
         <image name="chance2.jpg" width="1280" height="714"/>
         <image name="circle-user-7" width="30" height="30"/>
-        <image name="city.jpeg" width="2164" height="1440"/>
         <image name="dislike" width="32" height="32"/>
         <image name="home-7.png" width="30" height="30"/>
         <image name="jason7.jpg" width="600" height="400"/>
@@ -1665,6 +1666,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ywh-Fo-BaP"/>
-        <segue reference="pac-69-2Jj"/>
+        <segue reference="zBT-i9-Rhe"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -21,6 +21,7 @@ class UserMessagesListTableViewController: UITableViewController {
     
     var messagers = [String]()
     var profilePics = [String]()
+    var firstNames = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,7 @@ class UserMessagesListTableViewController: UITableViewController {
     
     func loadSampleMessages() {
         messagers = ["Amber Gallego", "Libbey Ketterer", "Anissa"]
+        firstNames = ["Amber", "Libbey", "Anissa"]
         profilePics = ["amber.jpg", "libbey.jpg", "anissa.png"]
     }
     
@@ -74,10 +76,10 @@ class UserMessagesListTableViewController: UITableViewController {
             if identifier == "Show Chat" {
                 if let detailvc = destinationvc as? ChatViewController {
                     let chatIndex = tableView.indexPathForSelectedRow?.row
-                    detailvc.friend = messagers[chatIndex!]
+                    detailvc.friend = firstNames[chatIndex!]
                     detailvc.inUser = true
                     detailvc.displayList = true
-                    
+
                 }
             }
         }

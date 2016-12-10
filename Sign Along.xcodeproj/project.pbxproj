@@ -57,6 +57,7 @@
 		9D80C0821DF2EBCA00A2450E /* UIImage+Decompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D80C0811DF2EBCA00A2450E /* UIImage+Decompression.swift */; };
 		9D80C0891DF2FD8C00A2450E /* AllSubmissionsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D80C0881DF2FD8C00A2450E /* AllSubmissionsCollectionViewController.swift */; };
 		9D80C08B1DF2FFA400A2450E /* AnnotatedVidCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D80C08A1DF2FFA400A2450E /* AnnotatedVidCell.swift */; };
+		9D973D6B1DFB51D000C9584F /* concert2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D973D6A1DFB51D000C9584F /* concert2.jpg */; };
 		9DA099701DFA748D00F2CE62 /* tattoosAlbum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DA0996A1DFA748D00F2CE62 /* tattoosAlbum.jpg */; };
 		9DA099711DFA748D00F2CE62 /* jasonDeruloAlbum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DA0996B1DFA748D00F2CE62 /* jasonDeruloAlbum.jpg */; };
 		9DA099721DFA748D00F2CE62 /* talkDirtyAlbum.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DA0996C1DFA748D00F2CE62 /* talkDirtyAlbum.png */; };
@@ -250,6 +251,7 @@
 		9D80C0811DF2EBCA00A2450E /* UIImage+Decompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Decompression.swift"; sourceTree = "<group>"; };
 		9D80C0881DF2FD8C00A2450E /* AllSubmissionsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllSubmissionsCollectionViewController.swift; sourceTree = "<group>"; };
 		9D80C08A1DF2FFA400A2450E /* AnnotatedVidCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotatedVidCell.swift; sourceTree = "<group>"; };
+		9D973D6A1DFB51D000C9584F /* concert2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = concert2.jpg; sourceTree = "<group>"; };
 		9DA0996A1DFA748D00F2CE62 /* tattoosAlbum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tattoosAlbum.jpg; sourceTree = "<group>"; };
 		9DA0996B1DFA748D00F2CE62 /* jasonDeruloAlbum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jasonDeruloAlbum.jpg; sourceTree = "<group>"; };
 		9DA0996C1DFA748D00F2CE62 /* talkDirtyAlbum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = talkDirtyAlbum.png; sourceTree = "<group>"; };
@@ -690,6 +692,7 @@
 		9DE3064B1DDE7A60008280D5 /* Sign Along */ = {
 			isa = PBXGroup;
 			children = (
+				9D973D6A1DFB51D000C9584F /* concert2.jpg */,
 				9DA099C11DFAA87500F2CE62 /* TrackTableViewCell.swift */,
 				9DA099BF1DFAA86900F2CE62 /* TracklistTableViewController.swift */,
 				9DA099B61DFA99A700F2CE62 /* sign_along_logo.png */,
@@ -889,6 +892,7 @@
 				9DA099E01DFAC90500F2CE62 /* CantFeelMyFace.mp3 in Resources */,
 				9DC04CCB1DF8C15D0011A465 /* Anaconda_Amber.mp4 in Resources */,
 				9DA099DE1DFAC90500F2CE62 /* Heathens.mp3 in Resources */,
+				9D973D6B1DFB51D000C9584F /* concert2.jpg in Resources */,
 				9DC04CC71DF8C15D0011A465 /* amber2.png in Resources */,
 				9DA0998E1DFA79D700F2CE62 /* jason7.jpg in Resources */,
 				9DC04CEC1DF8DF6F0011A465 /* StressedOut_anissa.mp4 in Resources */,
@@ -1086,6 +1090,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -1124,6 +1129,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

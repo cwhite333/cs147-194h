@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         UINavigationBar.appearance().titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "Chalkduster", size: 22)!,
+            ([NSFontAttributeName: UIFont(name: "Avenir-Book", size: 20)!,
                 NSForegroundColorAttributeName: UIColor.whiteColor()])
         
         UITabBar.appearance().tintColor = customColor
